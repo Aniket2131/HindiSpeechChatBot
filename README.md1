@@ -1,1 +1,12 @@
 # HindiSpeechChatBot
+
+This is one of the many application of the AI  models, which have the capacity to make out of the box use cases applications. The Hugging face provides many models with differnt use cases. I had implemented some of them to make this hindi speech chatBot. 
+
+In this application user need te provide Speech as an input and get an AI response in the form of Speech only.
+
+The Input which the user is providing is in One of the Indian language, which is hindi. This input will go through multiple layers to generate teh input as a speech in the same language.
+
+For reading speech, i had used python library named librosa. In the first layer, I had implemented openai/whisper-large model for making transcribe in hindi language and it also performs english translation from hindi speech. Second layer generate response, for which i had implemented gpt2-medium model, which generate response in english language. This output must be translated in hindi for which facebook mBart-50 models is used. 
+
+For generating final output as a speech in hindi the translated response must be read by some model, for which facebook-mms-tts-hin model is used.
+
