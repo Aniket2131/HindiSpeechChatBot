@@ -10,3 +10,4 @@ For reading speech, i had used python library named librosa. In the first layer,
 
 For generating final output as a speech in hindi the translated response must be read by some model, for which facebook-mms-tts-hin model is used.
 
+Here is the video link for more details. https://youtu.be/xdSLm655VWI
